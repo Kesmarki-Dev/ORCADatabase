@@ -1,0 +1,17 @@
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.0.xsd">
+
+    <changeSet author="ivg" id="database-tables-baseline-20240430" logicalFilePath="database-tables-baseline-20240430">
+        <sqlFile endDelimiter="GO" path="../../common/changesets/orcadb20240102.ddl.0.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+    <changeSet author="ivg" id="replace-identities-on-inherited" logicalFilePath="replace-identities-on-inherited">
+        <sqlFile path="../../common/changesets/replace-identities-on-inherited.ddl.0.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+    <changeSet author="ivg" id="valueset-is-genobject" logicalFilePath="valueset-is-genobject">
+        <sqlFile path="../../common/changesets/valueset-is-genobject.ddl.0.sql" relativeToChangelogFile="true"/>
+    </changeSet>
+
+</databaseChangeLog>
